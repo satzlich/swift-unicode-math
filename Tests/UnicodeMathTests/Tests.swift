@@ -1,3 +1,4 @@
+
 @testable import unicode_math
 @testable import unicode_math_class
 import XCTest
@@ -15,9 +16,14 @@ final class Tests: XCTestCase {
         XCTAssertEqual(math_class("😃"), nil)
     }
 
+    func testMathClassInit() {
+        XCTAssertEqual(MathClass("Normal"), .Normal)
+        XCTAssertNil(MathClass("FooBar"))
+    }
+
     func testUnicodeMathSymbol() {
         let symbol = MATH_SYMBOLS[0]
-        
+
         XCTAssertEqual(symbol.codepoint, "!")
         XCTAssertEqual(symbol.command, "mathexclam") // not "\\mathexclam"
         XCTAssertEqual(symbol.description, "exclamation mark")
