@@ -5,7 +5,7 @@ public let REVISION = 15
 // MARK: - MathClass
 
 /// Classification of a mathematical character.
-public enum MathClass: Equatable, Hashable, Comparable, CaseIterable {
+public enum MathClass: UInt8, Equatable, Hashable, CaseIterable {
     case Normal
     case Alphabetic
     case Binary
