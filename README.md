@@ -1,7 +1,7 @@
 # swift-unicode-math
 
 [![Platform Compatibility](https://img.shields.io/badge/Platforms-iOS%20|%20macOS%20-brightgreen)](https://swift.org/platforms/)
-[![Swift Version](https://img.shields.io/badge/Swift-5.9+-orange)](https://swift.org)
+[![Swift Version](https://img.shields.io/badge/Swift-6+-orange)](https://swift.org)
 
 
 Swift equivalent of [typst/unicode-math-class].
